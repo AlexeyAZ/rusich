@@ -1,0 +1,8 @@
+.sec3 {
+    background-image: url("../img/sec3-bg.jpg");
+    padding: 110px 0;
+
+    @include media (w1024) {
+        padding: 65px 0;
+    }
+}

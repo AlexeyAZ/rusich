@@ -1,0 +1,16 @@
+.decor-letter {
+    position: relative;
+
+    &__letter {
+        font-family: 'FitaVjaz', Arial, Helvetica, sans-serif;
+        font-size: 200px;
+        line-height: 1;
+        position: absolute;
+        top: -0.54em;
+        right: 100%;
+
+        @include media(w1024) {
+            font-size: 118px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+$sec6-bg: #eae9e9;
+
+.sec6 {
+    background-color: $sec6-bg;
+    padding-top: 80px;
+    padding-bottom: 125px;
+
+    @include media(w1024) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        padding: 0 10px;
+        width: calc(100% / 3);
+    }
+
+    &__list-img {
+        width: 100%;
+    }
+}

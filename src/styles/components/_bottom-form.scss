@@ -1,0 +1,17 @@
+.bottom-form-container {
+    padding: 0 50px;
+}
+.bottom-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap column;
+
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+
+    }
+}

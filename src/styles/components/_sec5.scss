@@ -1,0 +1,29 @@
+.sec5 {
+    background-image: url("../img/sec6-bg.jpg");
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    @include media(w1024) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &:before {
+        content: "";
+        background-color: $main-red-bg;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    &__border {
+        display: flex;
+    }
+
+    &__border-item {
+        padding: 0 10px;
+        width: 50%;
+    }
+}

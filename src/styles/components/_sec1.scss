@@ -1,0 +1,42 @@
+.sec1 {
+    background-image: url("../img/sec1-bg.jpg");
+    background-position: center bottom;
+    overflow: hidden;
+    padding-bottom: 340px;
+
+    @include media (w1024) {
+        padding-bottom: 220px;
+    }
+
+    &__img {
+        position: absolute;
+        left: 35%;
+        bottom: 50px;
+        z-index: 2;
+
+        @include media (w1024) {
+            left: 40%;
+            max-width: 600px;
+        }
+    }
+
+    &__container {
+        //position: 
+    }
+
+    &__block {
+        background-color: rgba(255,255,255,0.9);
+        padding: 70px 30% 100px 140px;
+
+        @include media (w1024) {
+            padding: 30px 30% 70px 80px;
+        }
+    }
+
+    &__btn {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 100%;
+        z-index: 3;
+    }
+}

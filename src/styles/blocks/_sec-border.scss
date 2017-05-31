@@ -1,0 +1,8 @@
+.sec-border {
+    border: 5px solid white;
+    padding: 50px 50px 40px;
+
+    @include media (w1024) {
+        padding: 30px 40px;
+    }
+}

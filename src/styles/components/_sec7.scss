@@ -1,0 +1,121 @@
+$sec7-list-item-border: #e0e6ce;
+$sec7-list-item-size: 110px;
+$sec7-list-item-size-tablet: 66px;
+
+.sec7 {
+    overflow: hidden;
+    padding: 60px 0 140px;
+
+    @include media(w1024) {
+        padding: 0 0 60px;
+    }
+
+    &__top {
+        background-image: url("../img/sec8-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-color: $main-green;
+        padding: 40px 0 120px;
+
+        @include media(w1024) {
+            padding: 30px 0 60px;
+        }
+    }
+
+    &__bottom {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @include media(w1024) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: flex-start;
+        width: calc(100% / 3);
+    }
+
+    &__list-item-border {
+        background-color: white;
+        border: 6px solid $sec7-list-item-border;
+        border-radius: 50%;
+        color: $main-green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 77px;
+        margin-right: 10px;
+        height: $sec7-list-item-size;
+        width: $sec7-list-item-size;
+
+        @include media(w1024) {
+            font-size: 45px;
+            height: $sec7-list-item-size-tablet;
+            width: $sec7-list-item-size-tablet;
+        }
+    }
+
+    &__list-item-text {
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-shrink: 1;
+        font-weight: 600;
+        padding-right: 10px;
+        min-height: $sec7-list-item-size;
+
+        @include media(w1024) {
+            min-height: $sec7-list-item-size-tablet;
+        }
+    }
+
+    &__bg-text {
+        background-color: $main-green;
+        display: inline-block;
+        padding: 4px 0;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            background-color: $main-green;
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+
+        &:after {
+            right: 100%;
+            width: 100vh;
+        }
+
+        &:before {
+            left: 100%;
+            width: 50vw;
+
+            @include media(w1024) {
+                width: 30vw;
+            }
+        }
+    }
+
+    &__img {
+        transform: translateY(calc(-50% + 1em));
+        position: absolute;
+        top: 0;
+        left: calc(100% + 45vh);
+
+        @include media(w1024) {
+            left: calc(100% + 20vw);
+            max-width: 400px;
+        }
+    }
+}

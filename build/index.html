@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Main</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a>
+            <p class="header__logo-text">Франшиза универсального <br>магазина самообслуживания<br> формата «у дома»</p>
+          </div>
+          <div class="header__item header__item_contacts"><a class="header__phone semibold" href="tel:88006005030" data-phone="88006005030">+7 (39-53) 40-93-23</a><a class="header__btn js-small-btn semibold" href="">Заказать звонок</a></div>
+        </div>
+      </header><img class="sec1__img" src="img/sec1-img.png" alt="">
+      <div class="container sec1__container">
+        <div class="sec1__block">
+          <div class="decor-letter">
+            <p class="semibold l color-red">таньте хозяином современного магазина самообслуживания с годовым доходом от 6 млн рублей</p>
+            <div class="decor-letter__letter color-red">с</div>
+          </div>
+          <p class="s mb1">Можно ли браться за это, если нет опыта работы в сфере торговли?</p>
+          <p class="s mb3">Насколько серьезная поддержка будет со стороны франчайзера?</p>
+          <p class="s color-red mb0">Ответы на эти и другие вопросы — в презентации</p>
+          <button class="btn-round btn-round_download sec1__btn js-small-btn">Скачать презентацию</button>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec2"><img class="sec2__img" src="img/sec2-img.png" alt="">
+      <div class="container">
+        <div class="sec2__text">
+          <div class="decor-letter">
+            <p class="semibold l color-red">ольшинство людей предпочтет сделать покупку в магазине, который находится поближе к их дому</p>
+            <div class="decor-letter__letter color-red">б</div>
+          </div>
+          <p class="s mb1 semibold">Преимущества магазина «Ваш Русичъ»:</p>
+          <ul class="sec2__list mb2">
+            <li class="sec2__list-item">территориальная близость к потребителю</li>
+            <li class="sec2__list-item">система самообслуживания</li>
+            <li class="sec2__list-item">продуманный ассортимент, расчитанный как на покупателей сегмента эконом, так и на покупателей с ожиданиями и повышенными закупочными способностями</li>
+            <li class="sec2__list-item">особое отношение к клиенту и индивидуальный подход</li>
+          </ul>
+          <p class="m color-red"><span class="bold">Наша цель -</span> дать людям возможность быстро совершать небольшие покупки. Совершая покупку наш клиент экономит самое дорогое — время!</p>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="container">
+        <div class="sec-border sec3__border">
+          <p class="l bold color-white ta-center mb0">Сеть магазинов самообслуживания «Ваш Русичъ» обеспечивает продуктами жителей г. Братск с 1994 года</p>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec4">
+      <div class="container">
+        <div class="sec4__list mb3">
+          <div class="sec4__list-item">
+            <div class="sec4__list-number">01</div>
+            <div class="sec4__list-text">На сегодняшний день наша сеть состоит из пяти розничных магазинов, оптово-розничного центра и двух распределительных центров</div>
+          </div>
+          <div class="sec4__list-item">
+            <div class="sec4__list-number">02</div>
+            <div class="sec4__list-text">Мы первые на рынке внедрили полноформатную систему самообслуживания, и продолжаем задавать планку качества работы для других магазинов города</div>
+          </div>
+          <div class="sec4__list-item">
+            <div class="sec4__list-number">03</div>
+            <div class="sec4__list-text">Клиенты выбирают нас за дружелюбный сервис, ассортимент из более чем 10 000 наименований, оступные цены и удобный формат «у дома»</div>
+          </div>
+        </div>
+        <div class="ta-center sec4__btn-block">
+          <p class="l color-red semibold mb2">Общий оборот нашей сети составляет 300+ млн рублей в год — и в 2017 году мы планируем увеличить его вдвое</p>
+          <button class="btn-round btn-round_download js-small-btn">Скачать презентацию</button>
+        </div>
+      </div>
+      <div class="sec4__bottom"><img class="sec4__img" src="img/sec4-img.png" alt="">
+        <div class="container">
+          <div class="sec4__bottom-text mb2">
+            <div class="decor-letter">
+              <p class="semibold l color-red">таньте частью большой семьи — откройте магазин «Ваш Русичъ» в вашем городе!</p>
+              <div class="decor-letter__letter color-red">с</div>
+            </div>
+            <p class="m color-gray">Мы заинтересованы в развитии сети — и поделимся с вами всеми наработками за 24 года практики </p>
+          </div>
+          <div class="sec4__advantage">
+            <div class="sec4__advantage-bigitem">
+              <div class="sec4__advantage-note">
+                <p class="color-white m">Вы можете рассчитывать на исключительную поддержку от команды <span class="semibold">франшизы «Ваш Русичъ»:</span></p>
+              </div>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon1.png" alt=""></div>
+              <p>Предоставим рекомендации по выбору и подготовке помещения, наружного и внутреннего оформления</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon2.png" alt=""></div>
+              <p>Предоставим технологию расстановки торгового оборудования и помощь в адаптации ее к помещению, а также рекомендации по выбору поставщика</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon3.png" alt=""></div>
+              <p>Рассчитаем срок окупае-мости ваших инвестиций, с учетом показателей и факторов вашего региона и поможем сократить первоначальные затраты на открытие магазина</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon4.png" alt=""></div>
+              <p>Окажем онлайн-поддержку по финансовым, юридическим, маркетинговым, производственным и другим вопросам</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon5.png" alt=""></div>
+              <p>Поможем сформировать ассортиментную матрицу, предоставим все контакты рекомендуемых поставщиков и условия работы с ними</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon6.png" alt=""></div>
+              <p>Предоставим отлаженные и описанные методы по найму персонала, стандарты по работе с товаром и обслуживанию покупателей</p>
+            </div>
+            <div class="sec4__advantage-item">
+              <div class="sec4__advantage-item-border"><img src="img/sec5-icon7.png" alt=""></div>
+              <p>Возьмем на себя все труды по продвижению и рекламе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container">
+        <div class="sec-border sec5__border color-white">
+          <div class="sec5__border-item">
+            <p class="l semibold mb0">Сильный бренд и мощная поддержка позволят вам зарабатывать</p>
+          </div>
+          <div class="sec5__border-item">
+            <p class="xl semibold">от 474 000 рублей</p>
+            <p class="s">ежемесячно начиная со второго месяца работы </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container ta-center">
+        <p class="m mb1">Скачайте подробную финансовую таблицу бизнеса</p>
+        <button class="btn-round btn-round_download js-small-btn mb2">Скачать презентацию</button>
+        <p class="l mb2">Посмотрите, как будет выглядеть ваш магазин<br> уже <span class="bold">через 4 месяца</span> после начала работы с нами</p>
+        <div class="sec6__list">
+          <div class="sec6__list-item"><img class="sec6__list-img" src="img/sec7-img1.jpg" alt=""></div>
+          <div class="sec6__list-item"><img class="sec6__list-img" src="img/sec7-img2.jpg" alt=""></div>
+          <div class="sec6__list-item"><img class="sec6__list-img" src="img/sec7-img3.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec7">
+      <div class="sec7__top">
+        <div class="container">
+          <p class="l semibold ta-center mb1">Для старта вам потребуется:</p>
+          <div class="sec7__list">
+            <div class="sec7__list-item">
+              <div class="sec7__list-item-border">1</div>
+              <div class="sec7__list-item-text">
+                <p class="m">300 000 рублей на франшизу</p>
+              </div>
+            </div>
+            <div class="sec7__list-item">
+              <div class="sec7__list-item-border">2</div>
+              <div class="sec7__list-item-text">
+                <p class="m">от 1,8 млн рублей на ремонт помещения и оборудование</p>
+              </div>
+            </div>
+            <div class="sec7__list-item">
+              <div class="sec7__list-item-border">3</div>
+              <div class="sec7__list-item-text">
+                <p class="m">5 млн рублей в качестве оборотного капитала</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec7__bottom">
+        <div class="container">
+          <div>
+            <p class="mb0">
+              Окупаемость с учётом<br>
+              нашего опыта:
+            </p>
+            <div class="bold sec7__bg-text">уже на 2-й год работы<img class="sec7__img" src="img/sec8-img.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec8">
+      <div class="container color-white">
+        <div class="sec8__row">
+          <div class="sec8__col">
+            <p class="l">Сделайте первый шаг к открытию магазина с 60-милионным оборотом</p>
+            <p class="s">проверьте, доступен ли ваш город для открытия по нашей франшизе?</p>
+          </div>
+          <div class="sec8__col">
+            <div class="bottom-form-container" id="bottomFormContainer">
+              <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="city" placeholder="Ваш город" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="phone" placeholder="Телефон" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="email" name="email" placeholder="E-mail" required>
+                </label>
+                <button class="btn-round btn-round_green bottom-form__btn">Проверить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__block_social">
+          <p class="footer__text footer__text_copy">© 2017, «Уномоменто»</p>
+          <div class="footer__social">
+            <p class="footer__text footer__text_social-title">Мы в социальных сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts">
+          <p class="footer__text footer__text_adress">Отдел по развитию г. Братск: ул. 25-летия БГС, 49а</p><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__block footer__block_feedback"><a class="footer__link footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn">Заказать звонок</a></div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
