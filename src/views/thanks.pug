@@ -6,15 +6,37 @@ block vars
 block content
     section.sec.thanks
         include components/header
+        img(src="img/sec1-img.png", alt="").sec1__img.sec1__img_thanks
         div.container
-            p.thanks__heading.
-                <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
-            p.thanks__title.
-                Мы свяжемся с Вами в ближайшее время
-            div.thanks__buttons
-                a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
-                    Открыть презентацию
-                a(href="/index.html").thanks__links-link.
-                    Вернуться на сайт
-            p.thanks__subtitle.
-                График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день
+            div.sec1__block.sec1__block_thanks
+                p.thanks__heading.color-red.bold.
+                    <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+                p.m.
+                    Мы свяжемся с Вами в ближайшее время
+                p.m.
+                    График работы с 9.00 до 23.00<br> Поэтому, если вы оставили заявку<br> в нерабочее время, мы перезвоним<br> вам на следующий рабочий день
+                div.thanks__buttons
+                    a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.thanks__btn.
+                        Открыть презентацию
+                    a(href="/index.html").btn-round.thanks__btn.
+                        Вернуться на сайт
+                //- p.s.mb1.
+                //-     Можно ли браться за это, если нет опыта работы в сфере торговли?
+                //- p.s.mb3.
+                //-     Насколько серьезная поддержка будет со стороны франчайзера?
+                //- p.s.color-red.mb0.
+                //-     Ответы на эти и другие вопросы - в презентации
+                //- button.btn-round.btn-round_download.sec1__btn.js-small-btn.
+                    Скачать презентацию
+
+            //- p.thanks__heading.
+            //-     <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+            //- p.thanks__title.
+            //-     Мы свяжемся с Вами в ближайшее время
+            //- div.thanks__buttons
+            //-     a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
+            //-         Открыть презентацию
+            //-     a(href="/index.html").thanks__links-link.
+            //-         Вернуться на сайт
+            //- p.thanks__subtitle.
+            //-     График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день

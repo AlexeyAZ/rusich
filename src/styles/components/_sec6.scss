@@ -10,13 +10,35 @@ $sec6-bg: #eae9e9;
         padding-bottom: 60px;
     }
 
+    @include media(w768) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    br {
+
+        @include media(w768) {
+            display: none;
+        }
+    }
+
     &__list {
         display: flex;
+
+        @include media(w768) {
+            flex-flow: column;
+        }
     }
 
     &__list-item {
         padding: 0 10px;
         width: calc(100% / 3);
+
+        @include media(w768) {
+            margin-bottom: 20px;
+            padding: 0;
+            width: 100%;
+        }
     }
 
     &__list-img {

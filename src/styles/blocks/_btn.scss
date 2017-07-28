@@ -16,7 +16,9 @@ a {
 }
 
 .btn-round {
+    transition: $trans;
     background-color: $btn-main-bg;
+    border-radius: $btn-height-pc / 2;
     border-radius: calc(#{$btn-height-pc} / 2);
     display: inline-block;
     cursor: pointer;
@@ -28,20 +30,31 @@ a {
     height: $btn-height-pc;
 
     @include media (w1024) {
+        border-radius: $btn-height-tablet / 2;
         border-radius: calc(#{$btn-height-tablet} / 2);
         font-size: $btn-font-size-tablet;
         height: $btn-height-tablet;
     }
 
     @include media (w768) {
+        border-radius: $btn-height-mobile / 2;
         border-radius: calc(#{$btn-height-mobile} / 2);
         font-size: $btn-font-size-mobile;
         padding: 0 20px;
         height: $btn-height-mobile;
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: lighten($btn-main-bg, 10%);
     }
 
     &_green {
         background-color: $main-green;
+
+        &:hover {
+            background-color: lighten($main-green, 10%);
+        }
     }
 
     &_download {
@@ -75,9 +88,10 @@ a {
         }
 
         @include media (w768) {
+            background-image: none;
             background-position: right 10px center;
-            //background-size: 30px;
-            padding-right: 50px;
+            background-size: 20px;
+            padding-right: 20px;
         }
     }
 

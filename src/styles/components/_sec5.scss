@@ -8,6 +8,11 @@
         padding-bottom: 50px;
     }
 
+    @include media(w768) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     &:before {
         content: "";
         background-color: $main-red-bg;
@@ -16,14 +21,26 @@
         top: 0;
         height: 100%;
         width: 50%;
+
+        @include media(w768) {
+            content: none;
+        }
     }
 
     &__border {
         display: flex;
+
+        @include media(w768) {
+            flex-flow: column;
+        }
     }
 
     &__border-item {
         padding: 0 10px;
         width: 50%;
+
+        @include media(w768) {
+            width: 100%;
+        }
     }
 }

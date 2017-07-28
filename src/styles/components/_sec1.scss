@@ -10,13 +10,24 @@
 
     &__img {
         position: absolute;
-        left: 35%;
+        left: 40%;
         bottom: 50px;
         z-index: 2;
+
+        &_thanks {
+            left: 45%;
+            bottom: 50px;
+        }
 
         @include media (w1024) {
             left: 40%;
             max-width: 600px;
+        }
+
+        @include media (w768) {
+            left: auto;
+            right: -130px;
+            max-width: 400px;
         }
     }
 
@@ -27,9 +38,30 @@
     &__block {
         background-color: rgba(255,255,255,0.9);
         padding: 70px 30% 100px 140px;
+        position: relative;
 
         @include media (w1024) {
             padding: 30px 30% 70px 80px;
+        }
+
+        @include media (w768) {
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+            padding: 30px 20px 60px 60px;
+        }
+
+        &_thanks {
+            padding: 40px 34% 70px 40px;
+
+            @include media (w768) {
+                padding: 30px 100px 70px 30px;
+            }
+        }
+
+        & > div,
+        & > p {
+            position: relative;
+            z-index: 2;
         }
     }
 
@@ -38,5 +70,10 @@
         position: absolute;
         top: 100%;
         z-index: 3;
+
+        @include media (w768) {
+            left: 30px;
+            width: calc(100% - 60px);
+        }
     }
 }

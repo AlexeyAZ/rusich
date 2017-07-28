@@ -5,4 +5,8 @@
     @include media (w1024) {
         padding: 30px 40px;
     }
+
+    @include media(w768) {
+        padding: 20px 30px;
+    }
 }

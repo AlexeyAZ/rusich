@@ -4,10 +4,14 @@ $sec7-list-item-size-tablet: 66px;
 
 .sec7 {
     overflow: hidden;
-    padding: 60px 0 140px;
+    padding: 0 0 140px;
 
     @include media(w1024) {
         padding: 0 0 60px;
+    }
+
+    @include media(w768) {
+        padding: 0;
     }
 
     &__top {
@@ -20,6 +24,10 @@ $sec7-list-item-size-tablet: 66px;
         @include media(w1024) {
             padding: 30px 0 60px;
         }
+
+        @include media(w768) {
+            padding: 30px 0 20px;
+        }
     }
 
     &__bottom {
@@ -30,16 +38,31 @@ $sec7-list-item-size-tablet: 66px;
             padding-top: 50px;
             padding-bottom: 50px;
         }
+
+        @include media(w768) {
+            font-size: 15px;
+            padding-top: 30px;
+            padding-bottom: 150px;
+        }
     }
 
     &__list {
         display: flex;
+
+        @include media(w768) {
+            flex-flow: column;
+        }
     }
 
     &__list-item {
         display: flex;
         align-items: flex-start;
         width: calc(100% / 3);
+
+        @include media(w768) {
+            margin-bottom: 20px;
+            width: 100%;
+        }
     }
 
     &__list-item-border {
@@ -75,6 +98,10 @@ $sec7-list-item-size-tablet: 66px;
         @include media(w1024) {
             min-height: $sec7-list-item-size-tablet;
         }
+
+        p {
+            width: 100%;
+        }
     }
 
     &__bg-text {
@@ -104,6 +131,10 @@ $sec7-list-item-size-tablet: 66px;
             @include media(w1024) {
                 width: 30vw;
             }
+
+            @include media(w768) {
+                width: 40vw;
+            }
         }
     }
 
@@ -111,11 +142,30 @@ $sec7-list-item-size-tablet: 66px;
         transform: translateY(calc(-50% + 1em));
         position: absolute;
         top: 0;
-        left: calc(100% + 45vh);
+        left: calc(100% + 35vw);
 
         @include media(w1024) {
             left: calc(100% + 20vw);
             max-width: 400px;
+        }
+
+        @include media(w768) {
+            display: none;
+            top: 100px;
+            left: calc(100% + 40vw);
+            max-width: 200px;
+        }
+    }
+
+    &__img-mobile {
+        display: none;
+
+        @include media(w768) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 200px;
         }
     }
 }

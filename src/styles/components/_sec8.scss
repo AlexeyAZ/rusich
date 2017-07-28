@@ -4,7 +4,11 @@
     position: relative;
 
     @include media(w1024) {
-        padding: 60px 0 60px;
+        padding: 60px 0;
+    }
+
+    @include media(w768) {
+        padding: 0;
     }
 
     &:before {
@@ -15,14 +19,37 @@
         left: 0;
         height: 100%;
         width: 50%;
+
+        @include media(w768) {
+            background-color: transparent;
+        }
     }
 
     &__row {
         display: flex;
+
+        @include media(w768) {
+            flex-flow: column;
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+        }
     }
 
     &__col {
         padding: 0 20px;
         width: 50%;
+
+        &_text {
+
+            @include media(w768) {
+                background-color: $main-red-bg;
+                flex-flow: column;
+            }
+        }
+
+        @include media(w768) {
+            padding: 30px $container-side-padding-tablet;
+            width: 100%;
+        }
     }
 }

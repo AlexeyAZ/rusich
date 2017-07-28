@@ -18,8 +18,9 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        @include media(w1024) {
-            //flex-wrap: wrap;
+        @include media(w768) {
+            flex-flow: column;
+            text-align: center;
         }
     }
 
@@ -28,15 +29,6 @@
 
         &_social {
             flex-direction: column;
-            
-            @include media(w1024) {
-                // flex-direction: row;
-                // justify-content: space-between;
-                // align-items: center;
-                // order: 3;
-                // margin-top: 30px;
-                // width: 100%;
-            }
 
             @include media(w768) {
                 flex-direction: column;
@@ -48,13 +40,8 @@
             flex-direction: column;
             align-items: center;
 
-            @include media(w1024) {
-                //order: 1;
-            }
-
             @include media(w768) {
                 align-items: center;
-                order: 2;
             }
         }
 
@@ -62,13 +49,8 @@
             flex-direction: column;
             align-items: flex-end;
 
-            @include media(w1024) {
-                //order: 2;
-            }
-
             @include media(w768) {
                 align-items: center;
-                order: 1;
             }
         }
 
@@ -93,10 +75,6 @@
         &_adress {
             text-align: center;
 
-            @include media(w1024) {
-                //text-align: left;
-            }
-
             @include media(w768) {
                 text-align: center;
             }
@@ -107,6 +85,10 @@
         display: flex;
         align-items: center;
         white-space: nowrap;
+
+        @include media(w768) {
+            justify-content: center;
+        }
     }
 
     &__social-list {
@@ -114,7 +96,6 @@
     }
 
     &__social-item {
-        //background-color: #9a9a9a;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -145,10 +126,6 @@
         &_politic {
             border-bottom: 1px solid currentColor;
 
-            @include media(w1024) {
-                //margin-left: 10px;
-            }
-
             @include media(w768) {
                 margin-right: 0;
             }
@@ -165,7 +142,6 @@
     }
 
     &__contacts {
-        //display: flex;
         text-align: center;
 
         @include media(w768) {
@@ -188,6 +164,10 @@
 
         @include media(w1024) {
             font-size: 11px;
+        }
+
+        @include media(w768) {
+            margin-bottom: 5px;
         }
     }
 }
